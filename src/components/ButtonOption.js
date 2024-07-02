@@ -28,7 +28,7 @@ const ButtonOption = ({ name, value, selected, onClick }) => {
       break;
   }
   return (
-    <button className={`flex items-center justify-center gap-2.5 border-2 border-transparent p-2.5 rounded-lg transition-all duration-300 w-40 bg-[#f4f8fc80] hover:bg-blue-50 ${selected ? 'border-blue-500 bg-blue-50' : ''}`} onClick={() => onClick(value)}>
+    <button className={`flex items-center justify-center gap-2.5 border-2   p-2.5 rounded-lg transition-all duration-300 w-40 bg-[#f4f8fc80] hover:bg-blue-50 ${selected ? 'border-blue-500 bg-blue-50 border-solid' : 'border-transparent'}`} onClick={() => onClick(value)}>
       {icon}
       {name}
     </button>
